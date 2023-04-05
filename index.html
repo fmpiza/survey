@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Survey Tool</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/nouislider/nouislider.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form method="POST" id="signup-form" class="signup-form" action="#">
+                <div>
+                    <h3>Initial Info</h3>
+                    
+                    <fieldset>
+                        <h2>Online Questionnaire Tool</h2>. All rights reserved 2023 Developed by <a href="https://fmpiza.github.io/webfridolin"><font size=1 color="blue"><b>Fridolin</b></font></a>
+                        
+                        <p class="desc">Please enter your Personal infomation and proceed to start your Questionnaire</p>
+                        <div class="fieldset-content">
+                            <div class="form-row">
+                                <label class="form-label">Your Name</label>
+                                <div class="form-flex">
+                                    <div class="form-group">
+                                        <input type="text" name="first_name" id="first_name" />
+                                        <span class="text-input" required>First</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="last_name" id="last_name" />
+                                        <span class="text-input" required>Last</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" name="email" id="email" />
+                                <span class="text-input">Example  :<span>  fmpiza82@gmail.com</span></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="text" name="phone" id="phone" />
+                            </div>
+                            <div class="form-date">
+                                <label for="birth_date" class="form-label" required>Survey Starting Date</label>
+                                <div class="form-date-group">
+                                    <div class="form-date-item">
+                                        <select id="birth_month" name="birth_month"></select>
+                                        <span class="text-input" required>MM</span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="birth_date" name="birth_date"></select>
+                                        <span class="text-input" required>DD</span>
+                                    </div>
+                                    <div class="form-date-item">
+                                        <select id="birth_year" name="birth_year"></select>
+                                        <span class="text-input" required>YYYY</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </fieldset>
+
+                    <h3>Start Questionnaire</h3>
+                    <fieldset>
+
+                        <p class="desc">Please enter your infomation and proceed to next step so we can build your account</p>
+                        
+                      
+
+
+
+                        <div class="fieldset-content">
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Qn 01. Please give us the aim (Topic) of your survey? </label>
+                                <input type="text" name="phone" id="phone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Qn 02. What is the coverage(Age / Geographical area) of your survey?</label>
+                                <input type="text" name="phone" id="phone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Qn 03. Give us the tools for data presentation that you will use for your survey</label>
+                                <input type="text" name="phone" id="phone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Qn 04. What is an expected time duration for survey? </label>
+                                <input type="text" name="phone" id="phone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Qn 05. How can a survey be applied to solve some relevant challenges in the society?</label>
+                                <input type="text" name="phone" id="phone" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Qn 06. Give us the extent of your case study </label>
+                                <input type="text" name="phone" id="phone" />
+                            </div>
+
+                            
+                            
+
+
+                                    
+                              
+                    </fieldset>
+
+                    <h3>Economic Issues</h3>
+                    <fieldset>
+                        <h2>Economic Issues</h2>
+                        <p class="desc">Set up your money limit to reach the future plan of the survey</p>
+                        <div class="fieldset-content">
+                            <div class="donate-us">
+                                <div class="price_slider ui-slider ui-slider-horizontal">
+                                    <div id="slider-margin"></div>
+                                    <p class="your-money">
+                                        Your money you can spend per month :
+                                        <span class="money" id="value-lower"></span>
+                                        <span class="money" id="value-upper"></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="vendor/minimalist-picker/dobpicker.js"></script>
+    <script src="vendor/nouislider/nouislider.min.js"></script>
+    <script src="vendor/wnumb/wNumb.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
